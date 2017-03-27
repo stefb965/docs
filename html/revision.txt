@@ -8,7 +8,7 @@ Repo: beats
   _CHANGELOG.asciidoc_5.1             c3f9fa59   Removed edit_url - no longer needed
   _CHANGELOG.asciidoc_5.2             58e287a8   Cherrypick community beats updates (#3801)
   _CHANGELOG.asciidoc_5.3             47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _CHANGELOG.asciidoc_5.x             1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _CHANGELOG.asciidoc_5.x             c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _CHANGELOG.asciidoc_master          0ae9a3df   Remove deprecated geoip feature (#3766)
   _filebeat/docs_1.0.1                890ae174   Docs: Fix path for beats-dir
   _filebeat/docs_1.1                  df036f1a   Docs: Fix path for beats-dir
@@ -18,7 +18,7 @@ Repo: beats
   _filebeat/docs_5.1                  c3f9fa59   Removed edit_url - no longer needed
   _filebeat/docs_5.2                  eee954c6   Added gpfsbeat line (#3736)
   _filebeat/docs_5.3                  47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _filebeat/docs_5.x                  1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _filebeat/docs_5.x                  c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _filebeat/docs_master               b50cd292   Sort list of community beats (#3800)
   _generate/metricbeat/metricset_5.0  876b0632   Add script to run Jenkins builds
   _generate/metricbeat/metricset_5.1  c3f9fa59   Removed edit_url - no longer needed
@@ -26,7 +26,7 @@ Repo: beats
   _generate/metricbeat/metricset_5.x  29644b1a   Removed edit_url - no longer needed
   _heartbeat/docs_5.2                 eee954c6   Added gpfsbeat line (#3736)
   _heartbeat/docs_5.3                 47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _heartbeat/docs_5.x                 1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _heartbeat/docs_5.x                 c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _heartbeat/docs_master              b50cd292   Sort list of community beats (#3800)
   _libbeat/docs_1.0.1                 890ae174   Docs: Fix path for beats-dir
   _libbeat/docs_1.1                   df036f1a   Docs: Fix path for beats-dir
@@ -36,25 +36,25 @@ Repo: beats
   _libbeat/docs_5.1                   c3f9fa59   Removed edit_url - no longer needed
   _libbeat/docs_5.2                   58e287a8   Cherrypick community beats updates (#3801)
   _libbeat/docs_5.3                   47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _libbeat/docs_5.x                   1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _libbeat/docs_5.x                   c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _libbeat/docs_master                0ae9a3df   Remove deprecated geoip feature (#3766)
   _metricbeat/docs_5.0                876b0632   Add script to run Jenkins builds
   _metricbeat/docs_5.1                c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/docs_5.2                eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/docs_5.3                47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _metricbeat/docs_5.x                1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _metricbeat/docs_5.x                c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _metricbeat/docs_master             0288d2b6   Introduce error reporting in schema (#3790)
   _metricbeat/module_5.0              876b0632   Add script to run Jenkins builds
   _metricbeat/module_5.1              c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/module_5.2              eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/module_5.3              47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _metricbeat/module_5.x              1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _metricbeat/module_5.x              c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _metricbeat/module_master           0288d2b6   Introduce error reporting in schema (#3790)
   _metricbeat/scripts_5.0             876b0632   Add script to run Jenkins builds
   _metricbeat/scripts_5.1             c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/scripts_5.2             eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/scripts_5.3             47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _metricbeat/scripts_5.x             1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _metricbeat/scripts_5.x             c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _metricbeat/scripts_master          0288d2b6   Introduce error reporting in schema (#3790)
   _packetbeat/docs_1.0.1              890ae174   Docs: Fix path for beats-dir
   _packetbeat/docs_1.1                df036f1a   Docs: Fix path for beats-dir
@@ -64,7 +64,7 @@ Repo: beats
   _packetbeat/docs_5.1                c3f9fa59   Removed edit_url - no longer needed
   _packetbeat/docs_5.2                eee954c6   Added gpfsbeat line (#3736)
   _packetbeat/docs_5.3                47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _packetbeat/docs_5.x                1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _packetbeat/docs_5.x                c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _packetbeat/docs_master             0ae9a3df   Remove deprecated geoip feature (#3766)
   _topbeat/docs_1.0.1                 890ae174   Docs: Fix path for beats-dir
   _topbeat/docs_1.1                   df036f1a   Docs: Fix path for beats-dir
@@ -77,7 +77,7 @@ Repo: beats
   _winlogbeat/docs_5.1                c3f9fa59   Removed edit_url - no longer needed
   _winlogbeat/docs_5.2                eee954c6   Added gpfsbeat line (#3736)
   _winlogbeat/docs_5.3                47de60ba   Update 5.3 builds to d5b30bd7 (#3806)
-  _winlogbeat/docs_5.x                1b778efe   Remove `_all` field from template for ES >= 6.0 (#3778)
+  _winlogbeat/docs_5.x                c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
   _winlogbeat/docs_master             2a14ebaf   Fix docs build (#3787)
 
 Repo: cloud
@@ -103,8 +103,8 @@ Repo: elasticsearch
   _docs/Versions.asciidoc_5.0         b9e1ec37   Fix docs for plugin install via proxy on Windows
   _docs/Versions.asciidoc_5.1         63466a32   Fix docs for plugin install via proxy on Windows
   _docs/Versions.asciidoc_5.2         83330617   Fix docs for plugin install via proxy on Windows
-  _docs/Versions.asciidoc_5.3         eba5abbc   Fix docs for plugin install via proxy on Windows
-  _docs/Versions.asciidoc_5.x         0c184425   Fix docs for plugin install via proxy on Windows
+  _docs/Versions.asciidoc_5.3         36000981   Updated 5.3.0 release notes
+  _docs/Versions.asciidoc_5.x         a54ee04a   Updated 5.3.0 release notes
   _docs/Versions.asciidoc_master      677fd68f   Fix docs for plugin install via proxy on Windows
   _docs/community-clients_master      5cf13f29   Update ingest-node.asciidoc
   _docs/groovy-api_0.90               d2bcbdfc   Make REST spec param types consistent
@@ -175,13 +175,13 @@ Repo: elasticsearch
   _docs/reference_5.0                 31507719   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
   _docs/reference_5.1                 4e25243a   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
   _docs/reference_5.2                 7ffcd4ad   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
-  _docs/reference_5.3                 662c45eb   Added release notes for v5.3.0
-  _docs/reference_5.x                 0b4498ac   [TEST] Set explicit query in DBQ request in reindex ReetryTests
+  _docs/reference_5.3                 36000981   Updated 5.3.0 release notes
+  _docs/reference_5.x                 a54ee04a   Updated 5.3.0 release notes
   _docs/reference_master              a6c42345   Add early-access check
   _docs/resiliency_master             5cf13f29   Update ingest-node.asciidoc
   _docs/ruby_master                   5cf13f29   Update ingest-node.asciidoc
-  _docs/src/test/cluster/config_5.3   662c45eb   Added release notes for v5.3.0
-  _docs/src/test/cluster/config_5.x   0b4498ac   [TEST] Set explicit query in DBQ request in reindex ReetryTests
+  _docs/src/test/cluster/config_5.3   36000981   Updated 5.3.0 release notes
+  _docs/src/test/cluster/config_5.x   a54ee04a   Updated 5.3.0 release notes
   _docs/src/test/cluster/config_master a6c42345   Add early-access check
 
 Repo: elasticsearch-hadoop
