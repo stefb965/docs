@@ -238,7 +238,7 @@ Repo: kibana
   _docs_5.1                           6587cc17   [Build] npm start should ignore coverage directory (#10415)
   _docs_5.2                           c34342f8   [Build] npm start should ignore coverage directory (#10415)
   _docs_5.3                           ce7908cd   Update existing filters when negated via a visualization (#10850)
-  _docs_5.x                           9111e622   Applies logic from #10784 to the tabs in an app (#10829)
+  _docs_5.x                           d6f7857e   docs: 5.3.0 release notes
   _docs_master                        8f51ec6d   Fixing Mocha tests for React tests (#10818)
 
 Repo: logstash
