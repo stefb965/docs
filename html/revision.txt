@@ -194,7 +194,7 @@ Repo: elasticsearch-hadoop
   _docs/src/reference/asciidoc_5.0    52460108   Update preface doc (#902)
   _docs/src/reference/asciidoc_5.1    5f468295   5.1.2 Release Notes
   _docs/src/reference/asciidoc_5.2    fd724f0a   Fix Cascading Local Mode NoClassDefFoundError when es.input.json=true (#937)
-  _docs/src/reference/asciidoc_5.3    9fc193b1   Fix Cascading Local Mode NoClassDefFoundError when es.input.json=true (#937)
+  _docs/src/reference/asciidoc_5.3    42a12337   Fixing doc error
   _docs/src/reference/asciidoc_5.x    5dc197fd   [REST] Adding support for Unicode characters in index and type names.
   _docs/src/reference/asciidoc_master b7ea331e   Fixing concurrent modification exceptions in the pooling logic.
 
