@@ -9,7 +9,7 @@ Repo: beats
   _CHANGELOG.asciidoc_5.2             58e287a8   Cherrypick community beats updates (#3801)
   _CHANGELOG.asciidoc_5.3             5c73ea6c   Cherrypick doc changes into 5.3 (#3821)
   _CHANGELOG.asciidoc_5.x             c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
-  _CHANGELOG.asciidoc_master          f4bea613   Fix packaging which broke because of asciidocs comments (#3825)
+  _CHANGELOG.asciidoc_master          e41868b1   Add newline to end of windows perfmon config (#3829)
   _filebeat/docs_1.0.1                890ae174   Docs: Fix path for beats-dir
   _filebeat/docs_1.1                  df036f1a   Docs: Fix path for beats-dir
   _filebeat/docs_1.2                  4a8bd970   Docs: Fix path for beats-dir
@@ -37,25 +37,25 @@ Repo: beats
   _libbeat/docs_5.2                   58e287a8   Cherrypick community beats updates (#3801)
   _libbeat/docs_5.3                   5c73ea6c   Cherrypick doc changes into 5.3 (#3821)
   _libbeat/docs_5.x                   c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
-  _libbeat/docs_master                f4bea613   Fix packaging which broke because of asciidocs comments (#3825)
+  _libbeat/docs_master                e41868b1   Add newline to end of windows perfmon config (#3829)
   _metricbeat/docs_5.0                876b0632   Add script to run Jenkins builds
   _metricbeat/docs_5.1                c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/docs_5.2                eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/docs_5.3                5c73ea6c   Cherrypick doc changes into 5.3 (#3821)
   _metricbeat/docs_5.x                c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
-  _metricbeat/docs_master             c7017db2   Docs should refer to correct version being used for testing (#3625)
+  _metricbeat/docs_master             e41868b1   Add newline to end of windows perfmon config (#3829)
   _metricbeat/module_5.0              876b0632   Add script to run Jenkins builds
   _metricbeat/module_5.1              c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/module_5.2              eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/module_5.3              5c73ea6c   Cherrypick doc changes into 5.3 (#3821)
   _metricbeat/module_5.x              c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
-  _metricbeat/module_master           c7017db2   Docs should refer to correct version being used for testing (#3625)
+  _metricbeat/module_master           e41868b1   Add newline to end of windows perfmon config (#3829)
   _metricbeat/scripts_5.0             876b0632   Add script to run Jenkins builds
   _metricbeat/scripts_5.1             c3f9fa59   Removed edit_url - no longer needed
   _metricbeat/scripts_5.2             eee954c6   Added gpfsbeat line (#3736)
   _metricbeat/scripts_5.3             5c73ea6c   Cherrypick doc changes into 5.3 (#3821)
   _metricbeat/scripts_5.x             c71bbb65   Merge pull request #3813 from tsg/automatic_merge_from_5.3_to_5.x_branch
-  _metricbeat/scripts_master          c7017db2   Docs should refer to correct version being used for testing (#3625)
+  _metricbeat/scripts_master          e41868b1   Add newline to end of windows perfmon config (#3829)
   _packetbeat/docs_1.0.1              890ae174   Docs: Fix path for beats-dir
   _packetbeat/docs_1.1                df036f1a   Docs: Fix path for beats-dir
   _packetbeat/docs_1.2                4a8bd970   Docs: Fix path for beats-dir
@@ -104,8 +104,8 @@ Repo: elasticsearch
   _docs/Versions.asciidoc_5.1         63466a32   Fix docs for plugin install via proxy on Windows
   _docs/Versions.asciidoc_5.2         abd25497   fixed a small typo
   _docs/Versions.asciidoc_5.3         ecce626b   Updated doc versions
-  _docs/Versions.asciidoc_5.x         3e226467   Updated doc versions
-  _docs/Versions.asciidoc_master      efc62f19   Docs: fix health response test
+  _docs/Versions.asciidoc_5.x         4ecb1ba6   Adds pattern keyword marker filter support (#23600)
+  _docs/Versions.asciidoc_master      2120086d   Adds pattern keyword marker filter support (#23600)
   _docs/community-clients_master      5cf13f29   Update ingest-node.asciidoc
   _docs/groovy-api_0.90               d2bcbdfc   Make REST spec param types consistent
   _docs/groovy-api_1.3                1f380675   Fixed doc version links
@@ -176,13 +176,13 @@ Repo: elasticsearch
   _docs/reference_5.1                 4e25243a   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
   _docs/reference_5.2                 abd25497   fixed a small typo
   _docs/reference_5.3                 ecce626b   Updated doc versions
-  _docs/reference_5.x                 3e226467   Updated doc versions
-  _docs/reference_master              efc62f19   Docs: fix health response test
+  _docs/reference_5.x                 4ecb1ba6   Adds pattern keyword marker filter support (#23600)
+  _docs/reference_master              2120086d   Adds pattern keyword marker filter support (#23600)
   _docs/resiliency_master             5cf13f29   Update ingest-node.asciidoc
   _docs/ruby_master                   5cf13f29   Update ingest-node.asciidoc
   _docs/src/test/cluster/config_5.3   ecce626b   Updated doc versions
-  _docs/src/test/cluster/config_5.x   3e226467   Updated doc versions
-  _docs/src/test/cluster/config_master efc62f19   Docs: fix health response test
+  _docs/src/test/cluster/config_5.x   4ecb1ba6   Adds pattern keyword marker filter support (#23600)
+  _docs/src/test/cluster/config_master 2120086d   Adds pattern keyword marker filter support (#23600)
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
@@ -237,7 +237,7 @@ Repo: kibana
   _docs_5.0                           f0ae48b6   [Build] npm start should ignore coverage directory (#10415)
   _docs_5.1                           6587cc17   [Build] npm start should ignore coverage directory (#10415)
   _docs_5.2                           c34342f8   [Build] npm start should ignore coverage directory (#10415)
-  _docs_5.3                           b1a278f1   docs: 5.3.0 release notes
+  _docs_5.3                           0557397c   docs: mark 5.3.0 as released
   _docs_5.x                           d6f7857e   docs: 5.3.0 release notes
   _docs_master                        8f51ec6d   Fixing Mocha tests for React tests (#10818)
 
