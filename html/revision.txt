@@ -206,7 +206,7 @@ Repo: elasticsearch-js
 Repo: elasticsearch-net
 --------------------------------------------------------------------------------
   _docs_1.x                           f545b4c0   Merge branch '1.x' of github.com:elastic/elasticsearch-net into 1.x
-  _docs_2.x                           2e9bcf86   Make it easier to work with server and client certificates in the client (#2647)
+  _docs_2.x                           23e8388c   Correctly handle terms include/exclude
   _docs_5.x                           a309d38d   Merge branch 'fix/5.x-significant-terms-include-exclude' into 5.x
   _docs_master                        eca88351   Ran code gen against elasticsearch master (#2680)
 

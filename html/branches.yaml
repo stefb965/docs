@@ -194,7 +194,7 @@ elasticsearch-js:
   _docs_13.0: d0423994de372fd03b681b94ac63740c4349240c
 elasticsearch-net:
   _docs_1.x: f545b4c06542d3e6379eeee3abc7bacc0dcfa3b2
-  _docs_2.x: 2e9bcf86023010037a59aa830dc09aa2789ee0ef
+  _docs_2.x: 23e8388c3ec58e5945be3f1bdee9afa895563e0c
   _docs_5.x: a309d38d8e4b5165dc7a00a23e99a118c61b01c7
   _docs_master: eca8835143fbb08207c60e14f4448f8262d3b36a
 elasticsearch-php:
