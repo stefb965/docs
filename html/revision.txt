@@ -103,9 +103,9 @@ Repo: elasticsearch
   _docs/Versions.asciidoc_5.0         b9e1ec37   Fix docs for plugin install via proxy on Windows
   _docs/Versions.asciidoc_5.1         63466a32   Fix docs for plugin install via proxy on Windows
   _docs/Versions.asciidoc_5.2         abd25497   fixed a small typo
-  _docs/Versions.asciidoc_5.3         ecce626b   Updated doc versions
-  _docs/Versions.asciidoc_5.x         4ecb1ba6   Adds pattern keyword marker filter support (#23600)
-  _docs/Versions.asciidoc_master      2120086d   Adds pattern keyword marker filter support (#23600)
+  _docs/Versions.asciidoc_5.3         ca26e82d   Clarify preference docs
+  _docs/Versions.asciidoc_5.x         d6cfefae   Clarify preference docs
+  _docs/Versions.asciidoc_master      c62d4b7b   Clarify preference docs
   _docs/community-clients_master      5cf13f29   Update ingest-node.asciidoc
   _docs/groovy-api_0.90               d2bcbdfc   Make REST spec param types consistent
   _docs/groovy-api_1.3                1f380675   Fixed doc version links
@@ -175,14 +175,14 @@ Repo: elasticsearch
   _docs/reference_5.0                 31507719   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
   _docs/reference_5.1                 4e25243a   [DOCS] Update the docs about the fact that global ordinals for _parent field are loaded eagerly instead of lazily by default.
   _docs/reference_5.2                 abd25497   fixed a small typo
-  _docs/reference_5.3                 ecce626b   Updated doc versions
-  _docs/reference_5.x                 4ecb1ba6   Adds pattern keyword marker filter support (#23600)
-  _docs/reference_master              2120086d   Adds pattern keyword marker filter support (#23600)
+  _docs/reference_5.3                 ca26e82d   Clarify preference docs
+  _docs/reference_5.x                 d6cfefae   Clarify preference docs
+  _docs/reference_master              c62d4b7b   Clarify preference docs
   _docs/resiliency_master             5cf13f29   Update ingest-node.asciidoc
   _docs/ruby_master                   5cf13f29   Update ingest-node.asciidoc
-  _docs/src/test/cluster/config_5.3   ecce626b   Updated doc versions
-  _docs/src/test/cluster/config_5.x   4ecb1ba6   Adds pattern keyword marker filter support (#23600)
-  _docs/src/test/cluster/config_master 2120086d   Adds pattern keyword marker filter support (#23600)
+  _docs/src/test/cluster/config_5.3   ca26e82d   Clarify preference docs
+  _docs/src/test/cluster/config_5.x   d6cfefae   Clarify preference docs
+  _docs/src/test/cluster/config_master c62d4b7b   Clarify preference docs
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
