@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>General Configuration
-        | Winlogbeat Reference [master]
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Monitoring Kibana
+        | X-Pack for the Elastic Stack [5.3]
       | Elastic
-    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Winlogbeat Reference [master]" /><link rel="up" href="winlogbeat-configuration-details.html" title="Configuration Options (Reference)" /><link rel="prev" href="configuration-winlogbeat-options.html" title="Winlogbeat Configuration" /><link rel="next" href="elasticsearch-output.html" title="Elasticsearch Output Configuration" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Docs/Winlogbeat/Reference/master" />
+    </title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="X-Pack for the Elastic Stack [5.3]" /><link rel="up" href="xpack-monitoring.html" title="Monitoring the Elastic Stack" /><link rel="prev" href="monitoring-logstash.html" title="Monitoring Logstash" /><link rel="next" href="configuring-monitoring.html" title="Configuring Monitoring" /><meta name="description" content="Get started with the documentation for Elasticsearch, Kibana, Logstash, Beats, X-Pack, Elastic Cloud, Elasticsearch for Apache Hadoop, and our language clients." /><meta name="DC.type" content="Docs/XPack/Reference/5.3" />
     <!-- RTP tag -->
     <script type='text/javascript' async>
     (function(c,h,a,f,i,e){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -555,43 +555,49 @@
 <div class="page_header">You are looking at preliminary documentation for a future release.
 Not what you want? See the
 <a href="../current/index.html">current release documentation</a>.
-</div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">Winlogbeat Reference
-      [master]
-    </a></span> » <span class="breadcrumb-link"><a href="configuring-howto-filebeat.html">Configuring Winlogbeat</a></span> » <span class="breadcrumb-link"><a href="winlogbeat-configuration-details.html">Configuration Options (Reference)</a></span> » <span class="breadcrumb-node">General Configuration</span></div><div class="navheader"><span class="prev"><a href="configuration-winlogbeat-options.html">
+</div><div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">X-Pack for the Elastic Stack
+      [5.3]
+    </a></span> » <span class="breadcrumb-link"><a href="xpack-monitoring.html">Monitoring the Elastic Stack</a></span> » <span class="breadcrumb-node">Monitoring Kibana</span></div><div class="navheader"><span class="prev"><a href="monitoring-logstash.html">
               « 
-              Winlogbeat Configuration</a>
+              Monitoring Logstash</a>
            
         </span><span class="next">
            
-          <a href="elasticsearch-output.html">Elasticsearch Output Configuration
+          <a href="configuring-monitoring.html">Configuring Monitoring
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="configuration-general"></a>General Configuration<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>The general section of the <code class="literal">winlogbeat.yml</code> config file contains configuration options for the Beat and some
-general settings that control its behaviour.</p><p>Here is an example configuration:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">name: "my-shipper"
-tags: ["service-X", "web-tier"]</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="_general_options"></a>General Options<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h3></div></div></div><p>You can specify the following options:</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_name"></a>name<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The name of the Beat. If this option is empty, the <code class="literal">hostname</code> of the server is
-used. The name is included as the <code class="literal">beat.name</code> field in each published transaction. You can
-use the name to group all transactions sent by a single Beat.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">name: "my-shipper"</pre></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_tags"></a>tags<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>A list of tags that the Beat includes in the <code class="literal">tags</code> field of each published
-transaction. Tags make it easy to group servers by different logical properties.
-For example, if you have a cluster of web servers, you can add the "webservers"
-tag to the Beat on each server, and then use filters and queries in the Kibana
-web interface to get visualisations for the whole group of servers.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">tags: ["my-service", "hardware", "test"]</pre></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="libbeat-configuration-fields"></a>fields<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Optional fields that you can specify to add additional information to the
-output. Fields can be scalar values, arrays, dictionaries, or any nested
-combination of these. By default, the fields that you specify here will be
-grouped under a <code class="literal">fields</code> sub-dictionary in the output document. To store the
-custom fields as top-level fields, set the <code class="literal">fields_under_root</code> option to true.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">fields: {project: "myproject", instance-id: "574734885120952459"}</pre></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_fields_under_root"></a>fields_under_root<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>If this option is set to true, the custom <a class="xref" href="configuration-general.html#libbeat-configuration-fields" title="fields">fields</a> are
-stored as top-level fields in the output document instead of being grouped under
-a <code class="literal">fields</code> sub-dictionary. If the custom field names conflict with other field
-names, then the custom fields overwrite the other fields.</p><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-yaml">fields_under_root: true
-fields:
-  instance_id: i-10a64379
-  region: us-east-1</pre></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_queue_size"></a>queue_size<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The internal queue size for single events in the processing pipeline. The default
-value is 1000.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_bulk_queue_size"></a>bulk_queue_size<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>(DO NOT TOUCH) The internal queue size for bulk events in the processing pipeline. The default value is 0.</p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_max_procs"></a>max_procs<a href="https://github.com/elastic/beats/edit/master/libbeat/docs/generalconfig.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>Sets the maximum number of CPUs that can be executing simultaneously. The
-default is the number of logical CPUs available in the system.</p></div></div></div><div class="navfooter"><span class="prev"><a href="configuration-winlogbeat-options.html">
+            </a></span></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a id="monitoring-kibana"></a>Monitoring Kibana</h2></div></div></div><p>To monitor Kibana:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p class="simpara">
+Install X-Pack by running <code class="literal">bin/kibana-plugin install</code> in the Kibana
+installation directory:
+</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-shell">bin/kibana-plugin install x-pack</pre></div><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>The plugin install script requires direct Internet access
+to download and install X-Pack. If your Kibana instance doesn’t have
+Internet access, <a class="link" href="installing-xpack.html#xpack-installing-offline" title="Installing X-Pack on Offline Machines">manually download and install X-Pack</a>.</p></div></div></li><li class="listitem"><p class="simpara">
+Kibana automatically sends metrics to the Elasticsearch
+cluster specified in the <code class="literal">elasticsearch.url</code>
+property in <code class="literal">kibana.yml</code>, which defaults to <code class="literal">http://localhost:9200</code>.
+</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>You can set the <code class="literal">xpack.monitoring.elasticsearch.url</code> in <code class="literal">kibana.yml</code>
+to specify the Elasticsearch cluster that Kibana should <span class="emphasis"><em>retrieve</em></span> monitoring
+data from. This enables you to use a single Kibana instance to search and
+visualize data in your production cluster as well as monitor data sent
+to a dedicated monitoring cluster.</p></div></div></li><li class="listitem">
+Restart Kibana.
+</li><li class="listitem"><p class="simpara">
+To verify your X-Pack monitoring configuration, point your web browser at your Kibana
+host, and select <span class="strong"><strong>Monitoring</strong></span> from the side navigation. Metrics reported from
+Kibana should be visible in the Kibana section. When security is
+enabled, to view the monitoring dashboards you must log in to Kibana as a user
+who has both the <code class="literal">kibana_user</code> and <code class="literal">monitoring_user</code> roles. For example:
+</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">POST /_xpack/security/user/stack-monitor
+{
+  "password" : "changeme",
+  "roles" : [ "kibana_user", "monitoring_user" ]
+}</pre></div><p class="simpara">+
+<div class="console_widget" data-snippet=":CONSOLE:"></div></p><p class="simpara"><span class="inlinemediaobject"><img src="images/monitoring/monitoring.jpg" alt="Monitoring" /></span></p></li></ol></div></div><div class="navfooter"><span class="prev"><a href="monitoring-logstash.html">
               « 
-              Winlogbeat Configuration</a>
+              Monitoring Logstash</a>
            
         </span><span class="next">
            
-          <a href="elasticsearch-output.html">Elasticsearch Output Configuration
+          <a href="configuring-monitoring.html">Configuring Monitoring
                »
             </a></span></div>
 <!-- end body -->
