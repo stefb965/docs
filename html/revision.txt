@@ -254,7 +254,7 @@ Repo: logstash
   _README.md_5.2                      ab993a7f   Typo in logging.asciidoc (#6808)
   _README.md_5.3                      3788ef9c   Bump version to 5.3.1 (#6849)
   _README.md_5.x                      6ac0b6a8   single element write can only really wakeup a single thread
-  _README.md_master                   9f5506db   single element write can only really wakeup a single thread
+  _README.md_master                   a06dc211   Spelling fixes (#6806)
 
 Repo: logstash-docs
 --------------------------------------------------------------------------------
@@ -269,7 +269,7 @@ Repo: logstash-docs
   _docs_5.2                           b6f79aae   Merge pull request #358 from dedemorton/cherrypick_#354_5.2
   _docs_5.3                           574c68f9   Merge pull request #359 from dedemorton/fix_doc_nits
   _docs_5.x                           3f71f820   Sync from elastic/logstash@584a3860a0d32063dd346e955e69e27739cce4c6
-  _docs_master                        0ff3bdcf   Sync from elastic/logstash@2fd1b377c3ecdc80c30d10c078425921fff82613
+  _docs_master                        eb04a189   Sync from elastic/logstash@a06dc211ff1f33442b9fa03f5892142aa80588ca
 
 Repo: sense
 --------------------------------------------------------------------------------
