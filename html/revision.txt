@@ -105,7 +105,7 @@ Repo: elasticsearch
   _docs/Versions.asciidoc_5.2         abd25497   fixed a small typo
   _docs/Versions.asciidoc_5.3         e252904a   Honor update request timeout
   _docs/Versions.asciidoc_5.x         0931ecc8   CONSOLEify geo aggregation docs
-  _docs/Versions.asciidoc_master      bc33753a   Mark exists-query dsl doc properly
+  _docs/Versions.asciidoc_master      9abb1254   Fix exists query doc
   _docs/community-clients_master      5cf13f29   Update ingest-node.asciidoc
   _docs/groovy-api_0.90               d2bcbdfc   Make REST spec param types consistent
   _docs/groovy-api_1.3                1f380675   Fixed doc version links
@@ -177,12 +177,12 @@ Repo: elasticsearch
   _docs/reference_5.2                 abd25497   fixed a small typo
   _docs/reference_5.3                 e252904a   Honor update request timeout
   _docs/reference_5.x                 0931ecc8   CONSOLEify geo aggregation docs
-  _docs/reference_master              bc33753a   Mark exists-query dsl doc properly
+  _docs/reference_master              9abb1254   Fix exists query doc
   _docs/resiliency_master             5cf13f29   Update ingest-node.asciidoc
   _docs/ruby_master                   5cf13f29   Update ingest-node.asciidoc
   _docs/src/test/cluster/config_5.3   e252904a   Honor update request timeout
   _docs/src/test/cluster/config_5.x   0931ecc8   CONSOLEify geo aggregation docs
-  _docs/src/test/cluster/config_master bc33753a   Mark exists-query dsl doc properly
+  _docs/src/test/cluster/config_master 9abb1254   Fix exists query doc
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------

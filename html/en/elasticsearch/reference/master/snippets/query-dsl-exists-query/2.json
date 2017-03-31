@@ -1,10 +1,10 @@
 PUT /example
 {
-  "mapping": {
+  "mappings": {
     "doc": {
       "properties": {
         "user": {
-          "type": "text",
+          "type": "keyword",
           "null_value": "_null_"
         }
       }

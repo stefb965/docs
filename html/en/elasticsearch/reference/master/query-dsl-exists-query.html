@@ -593,11 +593,11 @@ The <code class="literal">user</code> field is missing completely.
 then explicit <code class="literal">null</code> values are replaced with the specified <code class="literal">null_value</code>.  For
 instance, if the <code class="literal">user</code> field were mapped as follows:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">PUT /example
 {
-  "mapping": {
+  "mappings": {
     "doc": {
       "properties": {
         "user": {
-          "type": "text",
+          "type": "keyword",
           "null_value": "_null_"
         }
       }
