@@ -1,12 +1,13 @@
-GET /_search
+PUT /example
 {
-    "query": {
-        "bool": {
-            "must_not": {
-                "exists": {
-                    "field": "user"
-                }
-            }
+  "mapping": {
+    "doc": {
+      "properties": {
+        "user": {
+          "type": "text",
+          "null_value": "_null_"
         }
+      }
     }
+  }
 }
